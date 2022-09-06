@@ -1,0 +1,106 @@
+.header {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    .header-main {
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 53px;
+            .hotline {
+                p {
+                    display: flex;
+                    margin-bottom: 0;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                        img {
+                            display: block;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .social {
+                a {
+                    display: inline-block;
+                }
+            }
+            .lang {
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+        .header-nav {
+            .navbar {
+                padding: 0;
+                margin: 0;
+                &>li {
+                    position: relative;
+                    padding: 0;
+                    display: inline-block;
+                    float: none;
+                    a {
+                        color: #232323;
+                        font-size: 15px;
+                        line-height: 44px;
+                        height: 44px;
+                        text-transform: uppercase;
+                        padding: 0 7px;
+                        position: relative;
+                        display: block;
+                        background: none;
+                        &.active,
+                        &:hover {
+                            color: #c0a753;
+                            background: none;
+                        }
+                        span {
+                            position: relative;
+                            z-index: 2;
+                        }
+                    }
+                    .dropdown-menu {
+                        margin-top: 0;
+                        border-top-right-radius: 0;
+                        border-top-left-radius: 0;
+                        li {
+                            a {
+                                display: block;
+                                padding: 3px 20px;
+                                clear: both;
+                                font-weight: normal;
+                                line-height: 1.42857143;
+                                color: #333;
+                                white-space: nowrap;
+                                text-transform: uppercase;
+                                padding: 8px 20px;
+                                &:hover {
+                                    background: #c0a753;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .dropdown-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
