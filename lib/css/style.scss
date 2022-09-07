@@ -16,6 +16,9 @@
 @import "header";
 @import "main";
 @import "footer";
+@import "restaurant";
+@import "offer";
+@import "room";
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +49,21 @@
 
 :root {
     --primary-color: #029E9D;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.item-separate {
+    position: relative;
+    height: 14px;
+    width: 1px;
+    top: 3px;
+    background-color: #999999;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
 }
 
 body {
@@ -81,13 +99,12 @@ p {
     margin: 0 0 10px;
 }
 
-ul,
-ol {
-    margin: 0;
-    list-style-type: none;
-    padding: 0;
-}
-
+// ul,
+// ol {
+//     margin: 0;
+//     list-style-type: none;
+//     padding: 0;
+// }
 input:focus,
 textarea:focus,
 select:focus,
@@ -169,6 +186,9 @@ img {
         content: "";
         background: #bdbdbd;
         margin: 0 auto;
+        @media(max-width: 576px) {
+            width: 100%;
+        }
     }
     span {
         position: relative;
@@ -179,6 +199,9 @@ img {
         color: #c0a753;
         background: #fff;
         padding: 0 20px;
+        @media(max-width: 991px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -210,4 +233,12 @@ img {
     bottom: 10px;
     z-index: 9;
     transition: all .2s ease-in;
+}
+
+table>tbody>tr>th,
+table>tbody>tr>td {
+    padding: 5px;
+    border: 1px solid #ddd;
+    line-height: 1.42857143;
+    vertical-align: top;
 }

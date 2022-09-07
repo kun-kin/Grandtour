@@ -1,6 +1,11 @@
 .footer {
     position: relative;
     padding: 30px 0;
+    .logo-footer {
+        @media(max-width: 576px) {
+            margin: auto;
+        }
+    }
     .nav-bottom {
         margin: 0 0 10px 0;
         padding: 0 0 10px 0;
@@ -14,6 +19,9 @@
                 padding: 0 4px;
                 font-size: 15px;
             }
+        }
+        @media(max-width:991px) {
+            display: none;
         }
     }
     .contact-info {
@@ -38,6 +46,16 @@
             a {
                 display: inline-block;
             }
+        }
+        @media(max-width:767px) {
+            justify-content: flex-start;
+            margin-top: 10px;
+            span {
+                display: block;
+            }
+        }
+        @media(max-width:576px) {
+            justify-content: center;
         }
     }
 }
