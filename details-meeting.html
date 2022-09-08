@@ -90,22 +90,22 @@
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a href="">Superior City View </a>
+                                                    <a href="./details-room.html">Superior City View </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Superior Ocean View</a>
+                                                    <a href="./details-room.html">Superior Ocean View</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Deluxe Room</a>
+                                                    <a href="./details-room.html">Deluxe Room</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Premier Deluxe Ocean View</a>
+                                                    <a href="./details-room.html">Premier Deluxe Ocean View</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Grand Tourane Suite Ocean View</a>
+                                                    <a href="./details-room.html">Grand Tourane Suite Ocean View</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Presidential Suite</a>
+                                                    <a href="./details-room.html">Presidential Suite</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -145,10 +145,10 @@
                                                 <span>Spa & Life style</span>
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="">Serenity Salon & Spa</a></li>
-                                                <li><a href="">Outdoor swimming pool</a></li>
-                                                <li><a href="">Fitness Centre</a></li>
-                                                <li><a href="">Tennis Court</a></li>
+                                                <li><a href="./details-meeting.html">Serenity Salon & Spa</a></li>
+                                                <li><a href="./details-meeting.html">Outdoor swimming pool</a></li>
+                                                <li><a href="./details-meeting.html">Fitness Centre</a></li>
+                                                <li><a href="./details-meeting.html">Tennis Court</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -234,9 +234,7 @@
                             </span>
                         </p>
                         <div class="text-center" style="margin: 10px 0;">
-                            <a href="" class="btn btn-default btn-view-all">
-                                Request a quotation
-                            </a>
+                            <a href="#" data-toggle="modal" data-target="#bookmice" class="btn btn-default btn-view-all">Request a quotation</a>
                         </div>
                         <div class="table-responsive">
                             <table class="table-bordered" style="width: 100%;">
@@ -399,7 +397,59 @@
         </div>
     </div>
     <!--end contact modal-->
-
+    <!-- Modal -->
+    <div class="modal fade" id="bookmice" tabindex="-1" role="dialog" aria-labelledby="contactLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="title_lien_he_modal">Request a quotation</div>
+                    <form class="clearfix" role="form" onSubmit="return send_book_mice(this)" method="post" action="#" name="frmContact" id="frmContact">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" accesskey="U"><span class="required">*</span> Full name</label>
+                                    <input name="name" type="text" id="name" class="form-control" value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" accesskey="E"><span class="required">*</span> E-mail</label>
+                                    <input name="email" type="text" id="email" value="" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" accesskey="U"><span class="required">*</span> Phone</label>
+                                    <input name="phone" type="text" id="phone" class="form-control" value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="subject" accesskey="S"><span class="required">*</span> Choose room</label>
+                                    <select name="title" class="form-control" title="title">
+                      <option value="">-</option>
+                                              <option value="La Mer Ballroom">La Mer Ballroom</option>
+                                              <option value="Le Grand Ballroom">Le Grand Ballroom</option>
+                                              <option value="Azur Board Room">Azur Board Room</option>
+                                              <option value="Le Meridien Dining Room">Le Meridien Dining Room</option>
+                                              <option value="Cosmos Dining Room">Cosmos Dining Room</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments" accesskey="C"><span class="required">*</span> Content</label>
+                            <textarea name="message" rows="3" id="message" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default btn-lg btn-block btn-view-all">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./lib/js/jquery-3.6.0.min.js "></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js "></script>
