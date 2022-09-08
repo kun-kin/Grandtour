@@ -86,10 +86,40 @@
                 margin-right: 5px;
                 margin-bottom: 5px;
                 .quickbook-form-tab {
+                    background-color: #fff;
+                    text-align: center;
+                    box-shadow: 0 0 3px rgb(0 0 0 / 50%);
                     input {
                         width: 100%;
                         height: 50px;
                         text-align: center;
+                    }
+                    .calendar {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        right: 100px;
+                        background: #fff;
+                        z-index: 99999999;
+                    }
+                    .month,
+                    .date,
+                    .year {
+                        color: #666;
+                        font-size: 14px;
+                        line-height: 32px;
+                        text-transform: lowercase;
+                    }
+                    .date {
+                        color: #666;
+                        line-height: 50px;
+                        font-size: 24px;
+                        position: relative;
+                        width: 70%;
+                        margin: 0 auto;
+                        border-width: 1px 0;
+                        border-style: dotted;
+                        border-color: #ccc;
                     }
                 }
             }
@@ -99,9 +129,17 @@
                 background: 0 0;
                 float: left;
                 select {
-                    width: 100%;
-                    height: 50px;
-                    text-align: center;
+                    appearance: none;
+                    border: none;
+                    border-radius: 0;
+                    width: 90px;
+                    height: 116px;
+                    margin: auto;
+                    background: url('../../images/bg-select.png') center center no-repeat #fff;
+                    font-size: 24px;
+                    color: #666;
+                    padding-left: 38px;
+                    box-shadow: 0 0 3px rgb(0 0 0 / 50%);
                 }
             }
             .promocode {

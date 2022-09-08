@@ -310,10 +310,42 @@
   margin-right: 5px;
   margin-bottom: 5px;
 }
+.banner .booking-form__main .booking-tab .quickbook-form-tab {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
 .banner .booking-form__main .booking-tab .quickbook-form-tab input {
   width: 100%;
   height: 50px;
   text-align: center;
+}
+.banner .booking-form__main .booking-tab .quickbook-form-tab .calendar {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  background: #fff;
+  z-index: 99999999;
+}
+.banner .booking-form__main .booking-tab .quickbook-form-tab .month,
+.banner .booking-form__main .booking-tab .quickbook-form-tab .date,
+.banner .booking-form__main .booking-tab .quickbook-form-tab .year {
+  color: #666;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: lowercase;
+}
+.banner .booking-form__main .booking-tab .quickbook-form-tab .date {
+  color: #666;
+  line-height: 50px;
+  font-size: 24px;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  border-width: 1px 0;
+  border-style: dotted;
+  border-color: #ccc;
 }
 .banner .booking-form__main .section-adults {
   width: 90px;
@@ -322,9 +354,17 @@
   float: left;
 }
 .banner .booking-form__main .section-adults select {
-  width: 100%;
-  height: 50px;
-  text-align: center;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  width: 90px;
+  height: 116px;
+  margin: auto;
+  background: url("../../images/bg-select.png") center center no-repeat #fff;
+  font-size: 24px;
+  color: #666;
+  padding-left: 38px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 .banner .booking-form__main .promocode {
   background: #fff;
